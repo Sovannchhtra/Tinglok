@@ -1,0 +1,821 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanuman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'Roboto', sans-serif;
+     font-family: 'Hanuman', serif;
+}
+::selection{
+     background-color: rgb(2, 172, 2);
+     color: white;
+}
+/* ==================[menu1]================ */
+body{
+     position: relative;
+}
+.con_flu{
+     background-color: white;
+     box-shadow: 1px 0.1px 1px 0 gray;
+     padding: 10px;
+     position: sticky;
+     z-index: 4;
+     top: 0px;
+}
+.con .logo{
+     /* background-color: aqua;; */
+     position: relative;
+}
+.con .logo img{
+     width: 110px;
+}
+.con .in_search{
+     padding: 0;
+     display: flex;
+}
+.in_search .droup{
+     width: 30%;
+     height: 100%;
+     border: solid 1px gray;
+     border-radius: 4px 0px 0px 4px;
+}
+.in_search .droup select{
+     width: 100%;
+     height: 100%;
+     border: none;
+     outline: none;
+     line-height: 10px;
+     font-size: 13px;
+     border-radius: 4px 0px 0px 4px;
+}
+
+
+.in_search .input{
+     width: 60%;
+     height: 100%;
+     border: 0.1px solid gray;
+}
+.in_search #search{
+     width: 100%;
+     height: 100%;
+     border: none;
+     outline: none;
+     padding-left: 10px;
+}
+.in_search .search{
+     width: 10%;
+     height: 100%;
+     border-radius: 0px 4px 4px 0px;
+     border: 0.1px solid gray;
+}
+.in_search .search i{
+     font-size: 20px;
+     display: flex;
+     justify-content: center;
+     padding-top: 11%;
+}
+.con .login{
+     display: flex;
+}
+.con .login .re{
+     font-family: 'Roboto Condensed', sans-serif;
+     width: 50%;
+     height: 100%;
+     border-radius: 4px;
+}
+.con .login .re button{
+     width: 100%;
+     height: 100%;
+     border: none;
+     border-radius: 4px;
+     font-size: 20px;
+     color: white;
+     background-color: coral;
+
+}
+.con .login .re button:hover{
+     background-color: rgba(255, 127, 80, 0.905);
+}
+.con .login .lo{
+     font-family: 'Roboto Condensed', sans-serif;
+     width: 50%;
+     height: 100%;
+     border-radius: 4px;
+     margin-left: 10px;
+}
+.con .login .lo button{
+     width: 100%;
+     height: 100%;
+     border: none;
+     border-radius: 4px;
+     font-size: 20px;
+     color: white;
+     background-color: rgba(0, 128, 0, 0.855);
+
+}
+.con .login .lo button:hover{
+     background-color: rgb(0, 128, 0);
+}
+.re_lo_2{
+     position: sticky;
+     bottom: -8px;
+     z-index: 1;
+     display: none;
+}
+/* <!--=============[menu2]============== */
+.con .logo .menu2{
+     display: none;
+     width: 70px;
+     border-radius: 7px;
+}
+.con .logo .menu2 button i{
+     width: 100%;
+     height: 100%;
+}
+
+/* =========================[bg Form]=========================== */
+#bg_form_register{
+     position: absolute;
+     top: 0;
+     display: none;
+     z-index: 5; 
+     height: 100%;   
+     background-color: rgba(0, 0, 0, 0.577);
+}
+#bg_form_register .box-form{
+     margin: auto;
+     margin-top: 65px;
+     width: 600px;
+     /* height: 600px; */
+     border-radius: 5px;
+     padding: 15px;
+     position: relative;
+     background-color: white;
+}
+#bg_form_register .box-form button {
+     width: 30px;
+     border: none;
+     color: white;
+     border-radius: 50%;
+     position: absolute;
+     top: 3px;
+     right: 3px;
+     padding: 2px;
+     background-color: rgb(255, 0, 0);
+}
+/* _____________________________________________________ */
+#bg_form_login{
+     position: absolute;
+     top: 0;
+     display: none;
+     z-index: 5; 
+     height: 100%;  
+     background-color: rgba(0, 0, 0, 0.577);
+}
+#bg_form_login .box-form{
+     margin: auto;
+     margin-top: 65px;
+     width: 600px;
+     padding: 15px;
+     border-radius: 5px;
+     position: relative;
+     background-color: white;
+}
+#bg_form_login .box-form button {
+     width: 30px;
+     border: none;
+     color: white;
+     border-radius: 50%;
+     position: absolute;
+     top: 3px;
+     right: 3px;
+     padding: 2px;
+     background-color: rgb(255, 0, 0);
+}
+
+#bg_form_login h5{
+     position: relative;
+}
+#bg_form_login h5::before{
+     content: " ";
+     width: 47%;
+     height: 1px;
+     background-color: rgb(250, 0, 0);
+     position: absolute;
+     top: 11px;
+}
+#bg_form_login h5::after{
+     content: " ";
+     width: 47%;
+     height: 1px;
+     background-color: rgb(250, 0, 0);
+     position: absolute;
+     top: 11px;
+     right: 0;
+}
+#bg_form_login .box-form p{
+     text-align: center;
+}
+#bg_form_login .box-form h6{
+     text-align: center;
+}
+#bg_form_login .box-form .box_faec{
+     width: 100%;
+     height: 40px;
+     position: relative;
+}
+#bg_form_login .box-form .box_faec i{
+     position: absolute;
+     left: 41%;
+     top: 13.5px;
+}
+#bg_form_login .box-form .box_faec #btn-2 {
+     width: 100%;
+     height: 100%;
+     border: none;
+     border-radius: 7px;
+}
+/* ==========================[After]============================ */
+#bg_form_register h5{
+     position: relative;
+}
+#bg_form_register h5::before{
+     content: " ";
+     width: 47%;
+     height: 1px;
+     background-color: rgb(250, 0, 0);
+     position: absolute;
+     top: 11px;
+}
+#bg_form_register h5::after{
+     content: " ";
+     width: 47%;
+     height: 1px;
+     background-color: rgb(250, 0, 0);
+     position: absolute;
+     top: 11px;
+     right: 0;
+}
+#bg_form_register .box-form p{
+     text-align: center;
+}
+#bg_form_register .box-form h6{
+     text-align: center;
+}
+#bg_form_register .box-form .box_faec{
+     width: 100%;
+     height: 40px;
+     position: relative;
+}
+#bg_form_register .box-form .box_faec i{
+     position: absolute;
+     left: 41%;
+     top: 13.5px;
+}
+#bg_form_register .box-form .box_faec #btn-2 {
+     width: 100%;
+     height: 100%;
+     border: none;
+     border-radius: 7px;
+}
+/* =====================[sitbar]========================= */
+
+.sitbar{
+     width: 220px;
+     /* height: 670px; */
+     position: absolute;
+     top: 0px;
+     z-index: 11;
+     height: 100%;
+     background-color: white;
+     box-shadow: 1px 1px 3px gray;
+}
+.sitbar .box{
+     width: 100%;
+     height: 35px;
+     position: sticky;
+     top: 0;
+     border-bottom: solid 1px gray;
+}
+.sitbar .box p{
+     font-weight: bold;
+     color: green;
+     padding-top: 7px;
+     padding-left: 10px;
+     font-size: 12px;
+}
+.sitbar ul{
+     list-style: none;
+     position: sticky;
+     top: 30px;
+}
+.sitbar ul li a{
+     line-height: 40px;
+     font-weight: bold;
+     color: black;
+     font-size: 12px;
+     text-decoration: none;
+}
+.sitbar ul li a ion-icon{
+     margin-right: 18px;
+     color: green;
+}
+.sitbar ul li a i{
+     margin-right: 18px;
+     color: green;
+}
+.box_none{
+     width: 100%;
+     position: absolute;
+     height: 82%;
+     right: 0;
+     top: 0px;
+     z-index: 3;
+     display: none;
+}
+/* =================[Content]======================= */
+.box-content{
+     margin-top: 10px;
+}
+/* .box-content .menu-slide{
+     margin-left: 10px;
+} */
+.box-content .menu-slide .mySwiper{
+     height: 100%;
+}
+.box-content .menu-slide .mySwiper img{
+     width: 100%;
+     height: 100%;
+}
+.box-content .menu-bar2{
+     background-color: white;
+     position: relative;
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.box-content .menu-bar2 .box{
+     width: 100%;
+     height: 40px;
+}
+.box-content .menu-bar2 .box p{
+     padding-left: 15px;
+     padding-top: 11px;
+     height: 100%;
+     font-size: 13px;
+     font-weight: bold;
+     color: green;
+}
+.box-content .menu-bar2 ul{
+     list-style: none;
+}
+.box-content .menu-bar2 ul li a{
+     text-decoration: none;
+     color: black;
+     padding: 10px;
+     font-size: 13px;
+}
+.box-content .menu-bar2 ul li a ion-icon{
+     color: green;
+}
+.box-content .menu-bar2 ul li:hover{
+     box-shadow: 0px 1px 3px gray;
+     color: green;
+     cursor: pointer;
+     font-weight: bold;
+}
+.box-content .menu-bar2 ul li:hover a{
+     color: green;
+}
+.box-content .menu-bar2 .drop-sport{
+     width: 800px;
+     height: 100%;
+     background-color: white;
+     position: absolute;
+     display: none;
+     padding: 10px;
+     z-index: 4;
+     top: 0;
+     left: 330px;
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.box-content .menu-bar2:hover .drop-sport{
+     display: block;
+}
+.box-content .menu-bar2 .drop-sport p{
+     font-size: 13px;
+}
+.box-content .menu-bar2 .drop-sport:hover p{
+     cursor: pointer;
+}
+
+/* =========================[Carde after]========================= */
+.box-after{
+     padding: 10px;
+}
+.box_after{
+     position: relative;
+
+}
+
+.box_after h1::after{
+     content: " ";
+     height: 6px;
+     width: 100%;
+     border-radius: 7px;
+     background-color: rgba(128, 128, 128, 0.544);
+     position: absolute;
+     top: 1px;
+     z-index: 3;
+}
+
+
+/* =======================[card]============================ */
+.bg-img {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     border: solid 1px rgba(0, 0, 0, 0.196);
+ }
+ .box-card .box{
+     padding: 0;
+     padding-left: 10px;
+ }
+ .box-card .box:nth-child(1){
+     padding-left: 0px;
+ }
+.box-card .box .cards{
+     width: 100%;
+     height: 320px;
+     box-shadow: 0px 1px 3px gray;
+}
+.box-card .box .cards:hover{
+     box-shadow: 1px 2px 3px green;
+}
+.box-card .cards .img{
+     width: 100%;
+     height: 60%;
+     background-color: black;
+}
+.box-card .cards .dis{
+     width: 100%;
+     height: 40%;
+     padding: 6px;
+     position: relative;
+}
+.box-card .cards .dis P{
+     font-size: 12px;
+}
+.box-card .cards .dis .box_price{
+     width: 100%;
+     height: 30px;
+     position: absolute;
+     bottom: 0; 
+     right: 0;    
+}
+.box-card .cards .dis .box_price p{
+     text-align: right;
+     padding: 10px;
+     font-weight: bold;
+}
+/* ==========================[bank]========================== */
+.logo-bank{
+     width: 100%;
+     background-color: aqua;
+     padding: 0;
+}
+
+/* =================[footer]================== */
+.box-footer{
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.box-footer h3{
+     padding-top: 10px;
+     color: green;
+}
+.box-footer .cards ul{
+     list-style: none;
+     padding: 0;
+}
+.box-footer .cards ul li a{
+     text-decoration: none;
+}
+.box-footer .cards ul li:hover{
+     color: green;
+     font-weight: bold;
+     cursor: pointer;
+}
+.box-footer .cards ul li{
+     line-height: 35px;
+     font-size: 12px;
+}
+
+.footer{
+     background-color: rgb(13, 100, 82);
+     padding-top: 30px;
+     padding-bottom: 10px;
+}
+.footer .f-top .cards h6{
+     font-size: 14px;
+     color: white;
+     font-weight: bold;
+}
+.footer .f-top .cards p{
+     font-size: 12px;
+     color: rgba(255, 255, 255, 0.712);
+}
+.footer .f-top .cards ul{
+     list-style: none;
+     padding: 0;
+}
+.footer .f-top .cards ul li a{
+     text-decoration: none;
+}
+.footer .f-top .cards ul li{
+     line-height: 30px;
+     color: white;
+     font-size: 12px;
+}
+.footer .f-top .cards ul li ion-icon{
+     margin-right: 10px;
+     color: white;
+}
+.footer .f-top .cards ul li:hover{
+     color: rgb(157, 180, 157);
+     cursor: pointer;
+}
+.footer .box{
+     border-top: solid 1px black;
+     padding: 18px;
+     font-size: 13px;
+     color: rgba(255, 255, 255, 0.652);
+     text-align: center;
+}
+
+
+/* ====================[@media]====================== */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+     .con .logo img{
+          width: 100px;
+     }
+     .re_lo_2{
+          display: none;
+     }
+     .box-card .box .cards{
+          height: 250px;
+          margin-top: 10px;
+     }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+     .con .logo img{
+          margin-left: 65%;
+          width: 90px;
+     }
+     .con .in_search{
+          height: 44px;
+          margin-top: 15px;
+     }
+     .con .login{
+          display: none;
+     }
+     .con .login .re button{
+          background-color: rgba(255, 127, 80, 0.907);
+     }
+     .con .login .lo button{
+          background-color: rgba(0, 128, 0, 0.907);
+     }
+     /* ============================================== */
+     .re_lo_2{
+          display: block;
+          box-sizing: border-box;
+     }
+     .re_lo_2 .register{
+          height: 40px;
+          color: white;
+     }
+     .re_lo_2 .register button{
+          width:100%;
+          height: 100%;
+          border: none;
+          color: white;
+          background-color: rgba(255, 127, 80, 0.907);
+     }
+     .re_lo_2 .login{
+          height: 40px;
+     }
+     .re_lo_2 .login button{
+          width:100%;
+          height: 100%;
+          border: none;
+          color: white;
+          background-color: rgba(0, 128, 0, 0.907);
+     }
+     /* ============================== */
+     .con .logo .menu2{
+          display: block;
+     }
+     .menu-bar2{
+          display: none;
+     }
+     .box_after h1::after{
+          top: -5px;
+     }
+     .box-card .box .cards{
+          height: 350px;
+          margin-top: 10px;
+     }
+
+     .box-footer .cards ul li{
+          line-height: 30px;
+          font-size: 12px;
+     }
+ }
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+     .con .logo img{
+          margin-left: 55%;
+          width: 90px;
+     }
+     .con .in_search{
+          height: 44px;
+          margin-top: 15px;
+     }
+     .con .login{
+          display: none;
+     }
+     .con .login .re button{
+          background-color: rgba(255, 127, 80, 0.907);
+     }
+     .con .login .lo button{
+          background-color: rgba(0, 128, 0, 0.907);
+     }
+     .in_search .droup i{
+          margin-left: 10px;
+     }
+     /* ============================================== */
+     .re_lo_2{
+          display: block;
+          box-sizing: border-box;
+     }
+     .re_lo_2 .register{
+          height: 40px;
+     }
+     .re_lo_2 .register button{
+          width:100%;
+          height: 100%;
+          border: none;
+          color: white;
+          background-color: rgba(255, 127, 80, 0.907);
+     }
+     .re_lo_2 .login{
+          height: 40px;
+     }
+     .re_lo_2 .login button{
+          width:100%;
+          height: 100%;
+          border: none;
+          color: white;
+          background-color: rgba(0, 128, 0, 0.907);
+     }
+     /* ============================== */
+     .con .logo .menu2{
+          display: block;
+     }
+
+     #bg_form_register .box-form{
+          width: 450px;
+     }
+     #bg_form_register .box-form .box_faec i{
+          left: 38%;
+          top: 12px;
+     }
+
+     #bg_form_login .box-form{
+          width: 450px;
+     }
+     #bg_form_login .box-form .box_faec i{
+          left: 38%;
+          top: 12px;
+     }
+
+     .menu-bar2{
+          display: none;
+     }
+     .box_after h1::after{
+          top: -5px;
+     }
+     .box-card .box .cards{
+          height: 290px;
+          margin-top: 10px;
+     }
+
+     .logo-bank{
+          display: none;
+     }
+
+     .box-footer .cards ul li{
+          line-height: 28px;
+          font-size: 12px;
+     }
+
+}
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+     .con .logo img{
+          margin-left: 50%;
+          width: 90px;
+     }
+     .con .in_search{
+          height: 40px;
+          margin-top: 15px;
+     }
+     .box{
+          position: relative;
+     }
+     .con .login{
+          display: none;
+     }
+     .con .login .re button{
+          background-color: rgba(255, 127, 80, 0.907);
+     }
+     .con .login .lo button{
+          background-color: rgba(0, 128, 0, 0.907);
+     }
+     .in_search .droup{
+          font-size: 12px;
+     }
+     .in_search .droup i{
+          margin-left: 0px;
+          font-size: 15px;
+     }
+     /* ============================================== */
+     .re_lo_2{
+          display: block;
+          /* box-sizing: border-box; */
+     }
+     .re_lo_2 .register{
+          height: 40px;
+     }
+     .re_lo_2 .register button{
+          width: 100%;
+          height: 100%;
+          border: none;
+          color: white;
+          background-color: rgba(255, 127, 80, 0.907);
+     }
+     .re_lo_2 .login{
+          height: 40px;
+     }
+     .re_lo_2 .login button{
+          width: 100%;
+          height: 100%;
+          border: none;
+          color: white;
+          background-color: rgba(0, 128, 0, 0.907);
+     }
+     /* ============================== */
+     .con .logo .menu2{
+          display: block;
+     }
+
+     #bg_form_register .box-form{
+          width: 300px;
+     }
+     #bg_form_register .box-form .box_faec i{
+          left: 30%;
+          top: 12px;
+     }
+
+     #bg_form_login .box-form{
+          width: 300px;
+     }
+     #bg_form_login .box-form .box_faec i{
+          left: 30%;
+          top: 12px;
+     }
+     .menu-bar2{
+          display: none;
+     }
+     .box_after h1::after{
+          top: -5px;
+     }
+
+     .box-card .box .cards{
+          height: 230px;
+          margin-top: 10px;
+     }
+
+     .logo-bank{
+          display: none;
+     }
+     .box-footer .cards ul li{
+          line-height: 25px;
+          font-size: 11px;
+     }
+
+}

@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="/bootstrap.min.css">
+     <link rel="stylesheet" href="/style/style.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     <link rel="icon" href="/image/logo">
+     <title>Tinglok.com</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+     <!-- ====================[menu1]====================== -->
+     <div class="container-fluid con_flu">
+          <div class="container con">
+               <div class="row">
+                    <div class="col-xl-3 col-lg-2 col-md-12 col-sm-12 col-12 logo">
+                         <div class="row">
+                              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 menu2">
+                                   <button class="btn btn-outline-success w-100"><i
+                                             class="fa-solid fa-bars"></i></button>
+                              </div>
+                              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                                   <a href="#"><img src="/Image/logo" alt="logo"></a>
+                              </div>
+                         </div> 
+                    </div>
+                    <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 col-12 in_search">
+                         <div class="droup">
+                              <select>
+                                   <option value="">-- All Categories --</option>
+                                   <option value="">House & Land</option>
+                                   <option value="">Car & Vehicle</option>
+                                   <option value="">Phone & Table</option>
+                                   <option value="">Computer & Accessories</option>
+                                   <option value="">Fashion & Beauty</option>
+                                   <option value="">Book & Stationery</option>
+                                   <option value="">Food & Beverage</option>
+                              </select>
+                         </div>
+                         <div class="input">
+                              <input type="search" id="search" placeholder="Search for...">
+                         </div>
+                         <div class="btn btn-success search"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 login">
+                         <div class="re">
+                              <button onclick="form_register_show()">Register</button>
+                         </div>
+                         <div class="lo">
+                              <button onclick="form_login_show()">Login</button>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <div class="sitbar">
+          <div class="box">
+               <p>CATEGORIES</p>
+          </div>
+          <ul>
+               <li><a href="#"><ion-icon name="home-outline"></ion-icon>Homes & Land</a></li>
+               <li><a href="#"><ion-icon name="car-sport-outline"></ion-icon>Car & Vehicle</a></li>
+               <li><a href="#"><ion-icon name="phone-portrait-outline"></ion-icon>Phone & Tablet</a></li>
+               <li><a href="#"><ion-icon name="laptop-outline"></ion-icon>Computer & Accessories</a></li>
+               <li><a href="#"><i class="fa-solid fa-shirt"></i>Fashion & Beauty</a></li>
+               <li><a href="#"><ion-icon name="book-outline"></ion-icon>Book & Stationery</a></li>
+               <li><a href="#"><ion-icon name="fast-food-outline"></ion-icon>Food & Beverage</a></li>
+               <li><a href="#"><ion-icon name="bed-outline"></ion-icon>Hotel & Transport</a></li>
+               <li><a href="#"><i class="fa-solid fa-school"></i>Education & Sport</a></li>
+               <li><a href="#"><i class="fa-solid fa-couch"></i>Furniture & Decor</a></li>
+               <li><a href="#"><i class="fa-solid fa-user-tie"></i>Professional Services</a></li>
+               <li><a href="#"><i class="fa-solid fa-user-nurse"></i>Health & Medicine</a></li>
+               <li><a href="#"><i class="fa-solid fa-recycle"></i>Construction Materials</a></li>
+               <li><a href="#"><i class="fa-solid fa-laptop-medical"></i>Electronics & Appliances</a></li>
+          </ul>
+     </div>
+
+     <!-- ========================[Content slide]======================= -->
+
+     <div class="container box-content">
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 p-0 menu-bar2">
+                    <div class="box">
+                         <p>CATEGORIES</p>
+                    </div>
+                    <ul class="nav">
+                         <li class=" nav-item pt-1 pb-2 w-100 d-flex justify-content-between align-items-center pe-2"><a class="nav-link" href="#"><ion-icon class="pe-2" name="home-outline"></ion-icon>House & Land </a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+                         <li class=" nav-item pt-1 pb-2 w-100 d-flex justify-content-between align-items-center pe-2"><a class="nav-link" href="#"><ion-icon class="pe-2" name="car-sport-outline"></ion-icon> Car & Vehicle</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+                         <li class=" nav-item pt-1 pb-2 w-100 d-flex justify-content-between align-items-center pe-2"><a class="nav-link" href="#"><ion-icon class="pe-2"name="phone-portrait-outline"></ion-icon> Phone & Table</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+                         <li class=" nav-item pt-1 pb-2 w-100 d-flex justify-content-between align-items-center pe-2"><a class="nav-link" href="#"><ion-icon class="pe-2" name="camera-outline"></ion-icon>Camera & Accessories</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+                         <li class=" nav-item pt-1 pb-2 w-100 d-flex justify-content-between align-items-center pe-2"><a class="nav-link" href="#"><ion-icon class="pe-2" name="shirt-outline"></ion-icon>Fashion & Beauty</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+                         <li class=" nav-item pt-1 pb-2 w-100 d-flex justify-content-between align-items-center pe-2"><a class="nav-link" href="#"><ion-icon class="pe-2" name="book-outline"></ion-icon> Book & Stationery</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+                         <li class=" nav-item pt-1 pb-2 w-100 d-flex justify-content-between align-items-center pe-2"><a class="nav-link" href="#"><ion-icon class="pe-2" name="fast-food-outline"></ion-icon> Food & Beverage</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+                    </ul>
+                    <div class="box">
+                         <p>ALL CATEGORIES</p>
+                    </div>
+                    <div class="drop-sport">
+                         <div class="row">
+                              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                   <p>House for Sale</p>
+                                   <p>Condo fir Rent</p>
+                                   <p>Commercial Property for Rent</p>
+                                   <p>Land for Sale</p>
+                              </div>
+                              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                   <p>House for Rent</p>
+                                   <p>Apartment for Sale</p>
+                                   <p>Commercial Property for Sale</p>
+                                   <p>Land for Rent</p>
+                              </div>
+                              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                   <p>Condo for Sale</p>
+                                   <p>Apartment for Remt</p>
+                                   <p>Room for Remt</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12 p-0 menu-slide">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                         <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                   <img src="/image/slide.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                   <img src="/image/slide.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                   <img src="/image/slide.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                   <img src="/image/slide.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                   <img src="/image/slide.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                   <img src="/image/slide.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                   <img src="/image/slide.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                   <img src="/image/slide.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                   <img src="/image/slide.jpg" alt="">
+                              </div>
+                         </div>
+                         <div class="swiper-button-next text-light p-4"></div>
+                         <div class="swiper-button-prev text-light p-4"></div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <!-- =============================[Box Cards]======================== -->
+     <div class="container mt-2 box-after">
+          <div class="row">
+               <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 p-0 "><b>SPONSORED ADS</b></div>
+               <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12 p-0 mt-2 box_after">
+                    <h1></h1>
+               </div>
+          </div>
+     </div>
+     <!-- =====================================[1]=============================================== -->
+     <div class="container mt-2 box-card ">
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p1.jpg)"></div>
+                         <div class="dis">
+                              <p>សាក់កាដូរថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p2.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបម៉ូតថ្មីទើបចូលថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p3.jpg)"></div>
+                         <div class="dis">
+                              <p>លក់បោះដំុកាបូប...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p4.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបចូលស្តុកថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+     <!-- ===============================[2]=============================================== -->
+     <div class="container mt-2 box-card ">
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p5.jpg)"></div>
+                         <div class="dis">
+                              <p>សាក់កាដូរថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p6.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបម៉ូតថ្មីទើបចូលថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p7.jpg)"></div>
+                         <div class="dis">
+                              <p>លក់បោះដំុកាបូប...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p8.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបចូលស្តុកថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+
+     <!-- ===============================[3]===================================== -->
+     <div class="container mt-2 box-card ">
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p9.jpg)"></div>
+                         <div class="dis">
+                              <p>សាក់កាដូរថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p10.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបម៉ូតថ្មីទើបចូលថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p11.jpg)"></div>
+                         <div class="dis">
+                              <p>លក់បោះដំុកាបូប...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p12.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបចូលស្តុកថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+
+     <!-- ==================================[4]=================================== -->
+
+     <div class="container mt-2 box-card ">
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p13.jpg)"></div>
+                         <div class="dis">
+                              <p>សាក់កាដូរថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p14.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបម៉ូតថ្មីទើបចូលថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p15.jpg)"></div>
+                         <div class="dis">
+                              <p>លក់បោះដំុកាបូប...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p16.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបចូលស្តុកថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+
+     <div class="container mt-2 logo-bank">
+          <div class="row">
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                    <img src="/image/bank_logo.png" alt="" class="img-fluid w-100">
+               </div>
+          </div>
+     </div>
+
+     <!-- ========================================================================================= -->
+
+     <!-- =============================[Box Cards]======================== -->
+     <div class="container mt-2 box-after">
+          <div class="row">
+               <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 p-0 "><b>RECOMMENDED ADS</b></div>
+               <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12 p-0 mt-2 box_after">
+                    <h1></h1>
+               </div>
+          </div>
+     </div>
+     <!-- =====================================[1]=============================================== -->
+     <div class="container mt-2 box-card ">
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p17.jpg)"></div>
+                         <div class="dis">
+                              <p>សាក់កាដូរថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p18.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបម៉ូតថ្មីទើបចូលថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p19.jpg)"></div>
+                         <div class="dis">
+                              <p>លក់បោះដំុកាបូប...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p20.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបចូលស្តុកថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+     <!-- ===============================[2]=============================================== -->
+     <div class="container mt-2 box-card ">
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p21.jpg)"></div>
+                         <div class="dis">
+                              <p>សាក់កាដូរថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p22.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបម៉ូតថ្មីទើបចូលថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p23.jpg)"></div>
+                         <div class="dis">
+                              <p>លក់បោះដំុកាបូប...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p18.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបចូលស្តុកថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+
+     <!-- ===============================[3]===================================== -->
+
+     <div class="container mt-2 box-card ">
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p19.jpg)"></div>
+                         <div class="dis">
+                              <p>សាក់កាដូរថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p20.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបម៉ូតថ្មីទើបចូលថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/image/p21.jpg)"></div>
+                         <div class="dis">
+                              <p>លក់បោះដំុកាបូប...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/p22.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបចូលស្តុកថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+
+     <!-- ==================================[4]=================================== -->
+
+     <div class="container mt-2 box-card ">
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/p23.jpg)"></div>
+                         <div class="dis">
+                              <p>សាក់កាដូរថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/p24.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបម៉ូតថ្មីទើបចូលថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/p25.jpg)"></div>
+                         <div class="dis">
+                              <p>លក់បោះដំុកាបូប...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/p26.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបចូលស្តុកថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+
+     <div class="container mt-2 logo-bank">
+          <div class="row">
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                    <img src="/image/bank_logo.png" alt="" class="img-fluid w-100">
+               </div>
+          </div>
+     </div>
+
+     <!-- ======================================================================================================== -->
+
+     <!-- =============================[Box Cards]======================== -->
+     <div class="container mt-2 box-after">
+          <div class="row">
+               <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 p-0 "><b>POPULAR ADS</b></div>
+               <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12 p-0 mt-2 box_after">
+                    <h1></h1>
+               </div>
+          </div>
+     </div>
+     <!-- =====================================[1]=============================================== -->
+     <div class="container mt-2 box-card ">
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph1.jpg)"></div>
+                         <div class="dis">
+                              <p>សាក់កាដូរថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph2.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបម៉ូតថ្មីទើបចូលថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph3.jpg)"></div>
+                         <div class="dis">
+                              <p>លក់បោះដំុកាបូប...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph4.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបចូលស្តុកថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+     <!-- ===============================[2]=============================================== -->
+     <div class="container mt-2 box-card ">
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph5.jpg)"></div>
+                         <div class="dis">
+                              <p>សាក់កាដូរថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph6.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបម៉ូតថ្មីទើបចូលថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph7.jpg)"></div>
+                         <div class="dis">
+                              <p>លក់បោះដំុកាបូប...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph8.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបចូលស្តុកថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+
+     <!-- ===============================[3]===================================== -->
+
+     <div class="container mt-2 box-card ">
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph9.jpg)"></div>
+                         <div class="dis">
+                              <p>សាក់កាដូរថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph10.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបម៉ូតថ្មីទើបចូលថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph11.jpg)"></div>
+                         <div class="dis">
+                              <p>លក់បោះដំុកាបូប...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph12.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបចូលស្តុកថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+
+     <!-- ==================================[4]=================================== -->
+
+     <div class="container mt-2 box-card ">
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph13.jpg)"></div>
+                         <div class="dis">
+                              <p>សាក់កាដូរថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph14.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបម៉ូតថ្មីទើបចូលថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph15.jpg)"></div>
+                         <div class="dis">
+                              <p>លក់បោះដំុកាបូប...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph16.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបចូលស្តុកថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+
+     <div class="container mt-2 logo-bank">
+          <div class="row">
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                    <img src="/image/bank_logo.png" alt="" class="img-fluid w-100">
+               </div>
+          </div>
+     </div>
+
+     <!-- ===================================================================================================== -->
+
+     <!-- =============================[Box Cards]======================== -->
+     <div class="container mt-2 box-after">
+          <div class="row">
+               <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 p-0 "><b>LATEST ADS</b></div>
+               <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12 p-0 mt-2 box_after">
+                    <h1></h1>
+               </div>
+          </div>
+     </div>
+     <!-- =====================================[1]=============================================== -->
+     <div class="container mt-2 box-card ">
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph17.jpg)"></div>
+                         <div class="dis">
+                              <p>សាក់កាដូរថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph18.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបម៉ូតថ្មីទើបចូលថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph19.jpg)"></div>
+                         <div class="dis">
+                              <p>លក់បោះដំុកាបូប...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph20.jpg)"></div>
+                         <div class="dis">
+                              <p>កាបូបចូលស្តុកថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+     <!-- ===============================[2]=============================================== -->
+     <div class="container mt-2 box-card ">
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/ph21.jpg)"></div>
+                         <div class="dis">
+                              <p>សាក់កាដូរថ្មី...</p>
+                              <div class="text-danger box_price">
+                                   <p>$24.89</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+
+
+
+     <!-- ====================================================================================================================== -->
+
+     <!-- =============================[Box Cards]======================== -->
+     <div class="container mt-2 box-after">
+          <div class="row">
+               <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 p-0 "><b>BROWSE BY STORE</b></div>
+               <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12 p-0 mt-2 box_after">
+                    <h1></h1>
+               </div>
+          </div>
+     </div>
+     <!-- =====================================[1]=============================================== -->
+     <div class="container mt-2 box-card ">
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/b1.jpg)"></div>
+                         <div class="dis">
+                              <p>V Love Car...</p>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/b2.jpg)"></div>
+                         <div class="dis">
+                              <p>អចលនទ្រព្យ ទីក្រុងបៃតង...</p>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/b3.jpg)"></div>
+                         <div class="dis">
+                              <p>លក់បោះដំុកាបូប...</p>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/b4.jpg)"></div>
+                         <div class="dis">
+                              <p>Lalin Collection Store...</p>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+     <!-- ===============================[2]=============================================== -->
+     <div class="container mt-2 box-card ">
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/p1)"></div>
+                         <div class="dis">
+                              <p>សាក់កាដូរថ្មី...</p>
+                         </div>
+                    </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 box">
+                    <div class="cards">
+                         <div class="img bg-img img-fluid" style="background-image: url(/Image/p2)"></div>
+                         <div class="dis">
+                              <p>កាបូបម៉ូតថ្មីទើបចូលថ្មី...</p>
+                         </div>
+                    </div>
+
+               </div>
+
+          </div>
+     </div>
+
+
+
+
+     <!-- ----------------------------------------------------------[stop]---------------------------------------------------------------------- -->
+
+     <!-- ===============================[Footer]=============================== -->
+     <div class="container mt-3 box-footer">
+          <h3>Product by Location</h3>
+          <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 cards">
+                    <ul>
+                         <li><a href="#"></a>Phnom Penh</li>
+                         <li><a href="#"></a>Battambang</li>
+                         <li><a href="#"></a>Kampong-Speu</li>
+                         <li><a href="#"></a>Koh-Kong</li>
+                         <li><a href="#"></a>Pailin</li>
+                         <li><a href="#"></a>Ratanakiri</li>
+                         <li><a href="#"></a>Tboung-Khmum</li>
+                    </ul>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 cards">
+                    <ul>
+                         <li><a href="#"></a>Preah-Sihanouk</li>
+                         <li><a href="#"></a>Kandal</li>
+                         <li><a href="#"></a>Kampong-Thom</li>
+                         <li><a href="#"></a>Kratie</li>
+                         <li><a href="#"></a>Preah-Vihear</li>
+                         <li><a href="#"></a>Stung-Treng</li>
+                    </ul>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 cards">
+                    <ul>
+                         <li><a href="#"></a>Kampong-Cham</li>
+                         <li><a href="#"></a>Banteay-Meanchey</li>
+                         <li><a href="#"></a>Kampot</li>
+                         <li><a href="#"></a>Mondulkiri</li>
+                         <li><a href="#"></a>Prey-Veng</li>
+                         <li><a href="#"></a>Svay-Rieng</li>
+                    </ul>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 cards">
+                    <ul>
+                         <li><a href="#"></a>Siem-Reap</li>
+                         <li><a href="#"></a>Kampong-Chhnang</li>
+                         <li><a href="#"></a>Kep</li>
+                         <li><a href="#"></a>Otdar-Meanchey</li>
+                         <li><a href="#"></a>Pursat</li>
+                         <li><a href="#"></a>Takeo</li>
+                    </ul>
+               </div>
+          </div>
+     </div><!-- ========================================================== -->
+     <div class="container-fluid mt-4 footer">
+          <div class="container f-top">
+               <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 cards">
+                         <h6>About Us</h6>
+                         <p>Tinglok.com is the Online Classified Ads
+                              website in Cambodia that connect the Sellers and
+                              Buyers together. Enjoy your Tinglok with us!</p>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 cards">
+                         <h6>Follow Me!</h6>
+                         <ul>
+                              <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a>Youtube</li>
+                              <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a>Facebook</li>
+                         </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 cards">
+                         <h6>Customer Service</h6>
+                         <ul>
+                              <li><a href="#"></a>Contact Us</li>
+                              <li><a href="#"></a>Promote ADS</li>
+                              <li><a href="#"></a>Privacy Policy</li>
+                         </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 cards">
+                         <h6>Useful Information</h6>
+                         <ul>
+                              <li><a href="#"></a>Safety Tips</li>
+                              <li><a href="#"></a>Ad Posting Rules</li>
+                              <li><a href="#"></a>Disclaimer</li>
+                         </ul>
+                    </div>
+               </div>
+          </div>
+          <div class="box">
+               <p>Copyright ©2020 TINGLOK (Cambodia). All rights reserved.</p>
+          </div>
+     </div>
+
+
+     <div class="box_none"></div>
+     <!-- =================[Register Login]==================== -->
+     <div class="cintainer-fluid re_lo_2">
+          <div class="container-fluid">
+               <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 p-0 register">
+                         <button onclick="form_register_show()">Register</button>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 p-0 login">
+                         <button onclick="form_login_show()">Login</button>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <!-- ======================[From]======================== -->
+     <div class="container-fluid " id="bg_form_register">
+          <div class="box-form">
+               <button onclick=" form_register_hide()"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+               <h3>Register to post free Ads</h3>
+               <label for=""><b>User Email <font color="red"> *</font></b></label>
+               <br>
+               <input type="email" name="" id="" class="form-control" placeholder="Email">
+
+               <label class="mt-3" for=""><b>User Password <font color="red"> *</font></b></label>
+               <br>
+               <input type="password" name="" id="" class="form-control" placeholder="Password">
+
+               <label class="mt-3" for=""><b>User Confirm Password <font color="red"> *</font></b></label>
+               <br>
+               <input type="password" name="" id="" class="form-control" placeholder="Confirm Password"><br>
+               <input type="submit" name="" id="" class="form-control bg-success text-light">
+               <h5>
+                    <p>Or</p>
+               </h5>
+               <h6><b>Register by using Facebook account</b></h6>
+               <div class="box_faec">
+                    <i class="fa-brands fa-facebook text-light"></i>
+                    <input type="button" value="acebook" class="bg-primary text-light" name="" id="btn-2">
+               </div>
+               <br>
+               <span><b>Already have an account?</b></span>
+               <div class="box_faec">
+                    <input type="button" value="Login" class="bg-danger text-light" name="" id="btn-2">
+               </div>
+          </div>
+     </div>
+     <!-- __________________________________________ -->
+     <div class="container-fluid " id="bg_form_login">
+          <div class="box-form">
+               <button onclick=" form_login_hide()"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+               <h3>Login to manage Ads or post free Ads</h3>
+               <label for=""><b>User Email <font color="red"> *</font></b></label>
+               <br>
+               <input type="email" name="" id="" class="form-control" placeholder="Email">
+
+               <label class="mt-3" for=""><b>User Password <font color="red"> *</font></b></label>
+               <br>
+               <input type="password" name="" id="" class="form-control" placeholder="Password">
+
+               <br>
+               <input type="submit" name="" id="" class="form-control bg-success text-light">
+               <h5>
+                    <p>Or</p>
+               </h5>
+               <h6><b>Login by using your Facebook account</b></h6>
+               <div class="box_faec">
+                    <i class="fa-brands fa-facebook text-light"></i>
+                    <input type="button" value="acebook" class="bg-primary text-light" name="" id="btn-2">
+               </div>
+               <br>
+               <span><b>No account yet?</b></span>
+               <div class="box_faec">
+                    <input type="button" value="Login" class="bg-danger text-light" name="" id="btn-2">
+               </div>
+          </div>
+     </div>
+
+</body>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+     var swiper = new Swiper(".mySwiper", {
+          navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+          },
+     });
+</script>
+<script src="/js/index.js"></script>
+
+</html>
